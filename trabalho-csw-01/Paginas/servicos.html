@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/png" href="../Documents/img/human.png">
+    <title>Serviços</title>
+</head>
+
+<body>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="curriculo.html">Currículo</a>
+        <a href="github.html">GitHub</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+</body>
+<section id="padrao">
+    <div class="container">
+        <h1>Serviços de Construção de Sites</h1>
+        <p>Ofereço soluções digitais personalizadas para diversos setores do mercado.</p>
+
+        <hr>
+
+        <h2>Tipos de sites que produzo:</h2>
+        <ul>
+            <li><strong>Gastronomia:</strong> Restaurantes e Cafeterias.</li>
+            <li><strong>Saúde:</strong> Academias e Studios.</li>
+            <li><strong>Cultura:</strong> Livrarias e Bibliotecas.</li>
+            <li><strong>Esportes:</strong> Escolinhas de futebol e vôlei.</li>
+            <li><strong>Outros:</strong> Portfólios, Landing Pages e Sites Institucionais.</li>
+        </ul>
+
+        <hr>
+
+        <h2>Valores para Construção de Páginas Estáticas</h2>
+        <p>Sites informativos com conteúdo fixo, ideais para presença digital rápida.</p>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Quantidade de Páginas</th>
+                    <th>Investimento</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1 a 2 páginas</td>
+                    <td>R$ 800,00</td>
+                </tr>
+                <tr>
+                    <td>3 a 5 páginas</td>
+                    <td>R$ 1.500,00</td>
+                </tr>
+                <tr>
+                    <td>Mais de 5 páginas</td>
+                    <td>A partir de R$ 2.200,00</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+
+        <h2>Valores para Páginas Dinâmicas e Avançadas</h2>
+
+        <h3>Páginas Dinâmicas</h3>
+        <p>Sites que permitem atualização constante de conteúdo (como Blogs ou Catálogos).</p>
+        <p><strong>Valor:</strong> A partir de R$ 3.500,00</p>
+
+        <h3>Páginas Avançadas</h3>
+        <p>Sistemas complexos como E-commerce (lojas virtuais), sistemas de agendamento e áreas restritas.</p>
+        <p><strong>Valor:</strong> A partir de R$ 5.500,00</p>
+
+        <hr>
+
+        <p><em>* Os valores acima são estimativas e podem variar conforme a complexidade do projeto.</em></p>
+        <form action="mailto:joao@exemplo.com" method="post" enctype="text/plain">
+            <table border="1">
+                <tr>
+                    <th colspan="2">Faça seu orçamento</th>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" size="40" maxlength="30" placeholder="Digite seu nome">
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <label for="dataNasc">Data Nascimento:</label>
+                        <input type="date" id="dataNasc" name="dataNasc">
+                    </td>
+                    <td>
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" name="telefone" id="telefone" placeholder="(XX) XXXXX-XX">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="mail">Seu melhor email:</label>
+                        <input type="email" name="mail" id="mail" placeholder="Ex.:nome@email.com">
+                    </td>
+
+                    <td>
+                        <label for="tipoSite"></label>
+                        <input type="radio" name="tipoSite" id="tipoSite" value="estatico"> Site Estático
+                        <input type="radio" name="tipoSite" id="tipoSite" value="dinamico"> Site Dinâmico
+                        <input type="radio" name="tipoSite" id="tipoSite" value="consultoria"> Consultoria
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="horario">Melhor horário para contato:</label>
+                        <select type="radio" name="horario" id="horario">
+                            <option value="manha">Manhã</option>
+                            <option value="tarde">Tarde</option>
+                            <option value="noite">Noite</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label for="tipoPessoa"></label>
+                        <input type="radio" value="pessoaFisica" name="tipoPessoa" id="tipoPessoa">Pessoa Física
+                        <input type="radio" value="pessoaJuridica" name="tipoPessoa" id="tipoPessoa">Pessoa Jurídica
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="arquivo">Mande um protótipo</label>
+                        <input type="file" name="arquivo" id="arquivo">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="descricao">Descrição do Projeto:</label> <br>
+                        <textarea rows="8" cols="80"
+                            placeholder="Conte-me um pouco sobre o seu negócio (Ex: Restaurante, Academia...)"></textarea>
+                        <button type="submit" style="display: block;" name="descricao" id="descricao">Enviar
+                            Proposta</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</section>
+
+</html>

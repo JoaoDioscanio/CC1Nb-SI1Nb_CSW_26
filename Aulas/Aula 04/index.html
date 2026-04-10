@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Aula 04 / Aula Semântica e Forma</title>
+</head>
+
+<body style="background-color: rgb(240, 220, 220);">
+    <h1>Principais Formatações</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>Nesta frase temos uma parte do texto <b>em negrito</b> usando a tag b (sem semântica)</p>
+    <p>Nesta frase temos uma parte do texto <strong> em negrito</strong> usando a tag strong (com semântica)</p>
+    <h2>Itálico / Ênfase</h2>
+    <p>Nesta frase vamos entrar com uma palavra <i>em itálico</i> usando a tag i (sem semântica)</p>
+    <p>Nesta frase vamos entrar com uma palavra <em>em itálico</em> usando a tag em (com semântica)</p>
+    <h2>Texto Marcador</h2>
+    <p>Aqui vamos usar um texto com destaque <mark style="background-color:yellow;"> de marcador de texto</mark> usando
+        mark</p>
+    <p>Aqui vamos usar um texto com destaque <mark style="background-color:greenyellow;">de marcador de texto</mark>
+        usando mark</p>
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos trabalhando aqui com um <big>texto grande</big> e um <small>texto pequeno</small> nesta frase</p>
+    <h2>Texto deletado</h2>
+    <p>Neste parágrafo vamos trabalhar com um texto <s>que foi excluído</s> da frase (sem semântica)</p>
+    <p>Neste parágrafo vamos trabalhar com um texto <del>que foi excluído</del> da frase (com semântica)</p>
+    <h2>Texto Inserido</h2>
+    <p>Nesta frase vamos demonstrar como <u>destacar um texto inserido</u> na frase (sem semântica)</p>
+    <p>Nesta frase vamos demonstrar como <ins>destacar um texto inserido</ins> na frase (com semântica)</p>
+    <h2>Texto Sobrescrito</h2>
+    <p>Vamos demonstrar uma fórmula da equação do segundo grau ax<sup>2</sup> + bx + c = 0</p>
+    <h2>Texto Subescrito</h2>
+    <p>Vamos demonstrar o texto subescrito com a fórmula da água H<sub>2</sub>O</p>
+    <h2>Trecho de Código Fonte</h2>
+    <p>Neste exemplo vou demonstrar um trecho de código inserido o comando document.getElementById('edtCodigo) que é um
+        comando java script</p>
+    <pre>
+    <!-- O pre permite a inserção de espaços e indentação-->
+        <code>
+    #include stdio.h
+    #include math.h
+
+    int main() {
+        double a, b, c;
+        double delta, x1, x2;
+
+        printf("Digite os valores de a, b e c: ");
+        scanf("%lf %lf %lf", &a, &b, &c);
+
+        if (a == 0) {
+            printf("Isso não é uma equação do segundo grau.\n");
+            return 0;
+        }
+
+        delta = b * b - 4 * a * c;
+
+        if (delta > 0) {
+            x1 = (-b + sqrt(delta)) / (2 * a);
+            x2 = (-b - sqrt(delta)) / (2 * a);
+            printf("Duas raízes reais:\n");
+            printf("x1 = %.2lf\n", x1);
+            printf("x2 = %.2lf\n", x2);
+        } else if (delta == 0) {
+            x1 = -b / (2 * a);
+            printf("Uma raiz real:\n");
+            printf("x = %.2lf\n", x1);
+        } else {
+            printf("Não existem raízes reais.\n");
+        }
+
+        return 0;
+    }
+        </code>
+    </pre>
+</body>
+
+</html>
+<!-- Use Alt+Shift+F para indentar automaticamente o código-->
