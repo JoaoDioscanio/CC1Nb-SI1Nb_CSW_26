@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Aula 09 / Labels e Buttons</title>
+</head>
+
+<body>
+    <h1>Formulário</h1>
+    <form action="mailto:exemplo@dominio.com" method="post" enctype="text/plain">
+        <table border="1">
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Nome:</p>
+                    </td>
+                    <td>
+                        <label for="nomeUsuario"></label>
+                        <input type="text" name="nomeUsuario" id="nomeUsuario" size="40" maxlength="30" value=""
+                            placeholder="Digite seu nome">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>E-mail pessoal:</p>
+                    </td>
+                    <td>
+                        <label for="emailPessoal"></label>
+                        <input type="email" name="emailPessoal" id="emailPessoal" size="40" maxlength="30" value=""
+                            placeholder="Digite seu email com @">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>E-mail (patter)</p>
+                    </td>
+                    <td>
+                        <label for="emailPatter"></label>
+                        <input type="email" name="emailPatter" id="emailPatter" size="40" maxlength="30" value=""
+                            placeholder="Digite seu email com @">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Senha:</p>
+                    </td>
+                    <td>
+                        <label for="password"></label>
+                        <input type="password" name="password" id="password" size="40" maxlength="30" value="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="age">Idade:</label>
+                    </td>
+                    <td>
+                        <input type="number" name="idade" id="age" size="40">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <p>Deixe um comentário:</p>
+                        <textarea name="comentário" cols="50" rows="10"
+                            placeholder="Escreva aqui seu comentário"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Matéria de interesse:</p>
+                        <label for="materia"></label>
+                        <input type="checkbox" name="materia" value="backend"> Backend <br>
+                        <input type="checkbox" name="materia" id="materia" value="frontend"> Frontend <br>
+                        <input type="checkbox" name="materia" id="materia" value="fullstack"> FullStack
+                    </td>
+                    <td>
+                        <p>Tipo de Viagem:</p>
+                        <label for="viagem"></label>
+                        <input type="radio" name="viagem" id="viagem" value="negocios"> Negócios <br>
+                        <input type="radio" name="viagem" id="viagem" value="Lazer"> Lazer <br>
+                        <input type="radio" name="viagem" id="viagem" value="turismo"> Turismo <br>
+                        <input type="radio" name="viagem" id="viagem" value="academico"> Acadêmico
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="esporte">Esporte favorito:</label>
+                        <select name="esporte" id="esporte" size="4">
+                            <option value="futebol">Futebol</option>
+                            <option value="basquete">Basquete</option>
+                            <option value="volei">Vôlei</option>
+                            <option value="tenis">Tênis</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label for="investimento">Investimentos:</label>
+                        <select name="investimento" id="investimento">
+                            <option disabled>Baixo risco</option>
+                            <option value="poupanca">Poupança</option>
+                            <option value="cdb">CDB</option>
+                            <option value="tesouroD">Tesouro Direto</option>
+                            <option disabled>Risco moderado</option>
+                            <option value="fii">Fundos Imobiliários</option>
+                            <option value="cdi">CDI</option>
+                            <option value="debentures">DEBÊNTURES</option>
+                            <option disabled>Risco elevado</option>
+                            <option value="cripto">Criptomoedas</option>
+                            <option value="acoes">Ações</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="cor">Escolha uma cor:</label>
+                        <input type="color" name="cor" id="cor">
+                    </td>
+                    <td>
+                        <label for="anexo">Selecione um arquivo:</label>
+                        <input type="file" name="anexo" id="anexo">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="dataEnvio">Data e Hora envio</label>
+                        <input type="datetime-local" name="dataEnvio" id="dataEnvio">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit">
+                    </td>
+                    <td>
+                        <input type="reset" value="Limpar">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+
+</html>
