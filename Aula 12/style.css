@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+body{
+    text-align: justify;
+}
+
+.c1{
+    background-color: aqua;
+    text-align: center;
+}
+.c1:hover{
+    background-color: bisque;
+}
+
+.c2{
+    background-color: aquamarine;
+    text-align: center;
+}
+
+.c2:active{
+    background-color: red;
+}
+.c3{
+    text-align: left;
+}
+.links{
+    >div{
+        text-align: center;
+    }
+    >a::after{
+        content: '*';
+        font-size: large;
+    }
+    
+    >a::before{
+        content: '*';
+        font-size: large;
+    }
+}
