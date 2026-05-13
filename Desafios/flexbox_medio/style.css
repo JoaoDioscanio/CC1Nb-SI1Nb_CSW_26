@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* Container Principal */
+.card-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os cards pulem para a linha de baixo em telas menores */
+  justify-content: center; /* Centraliza os cards na página */
+  gap: 20px; /* Espaçamento entre os cards */
+  padding: 20px;
+}
+
+/* Estilo Individual dos Cards */
+.card {
+  display: flex;
+  flex-direction: column; /* Organiza o conteúdo interno verticalmente */
+  flex: 1; /* Faz os cards terem o mesmo tamanho */
+  min-width: 250px; /* Impede que fiquem finos demais antes de quebrar a linha */
+  max-width: 350px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease; /* Para o efeito hover */
+  background: #fff;
+}
+
+/* Desafio Extra: Botão na parte inferior */
+.card p {
+  flex-grow: 1; /* O parágrafo cresce para ocupar o espaço, empurrando o botão para baixo */
+}
+
+/* Desafio Extra: Efeito Hover */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+}
+
+/* Botão */
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}

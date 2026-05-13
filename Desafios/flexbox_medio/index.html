@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Header Responsivo - Cards</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-border;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Container que agrupa os 3 cards */
+        .container {
+            display: flex;
+            flex-direction: row; /* Lado a lado por padrão */
+            flex-wrap: wrap;    /* Permite quebra de linha em telas menores */
+            justify-content: center;
+            gap: 20px;          /* Espaçamento entre os cards */
+            padding: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        /* Estilização individual do Card */
+        .card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            
+            /* Flexbox interno para o conteúdo do card */
+            display: flex;
+            flex-direction: column;
+            
+            /* Garante que tenham o mesmo tamanho */
+            flex: 1;
+            min-width: 280px; 
+            max-width: 350px;
+            
+            /* Desafio Extra: Transição para o efeito hover */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Desafio Extra: Efeito hover nos cards */
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .card p {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.5;
+            
+            /* Desafio Extra: Faz o parágrafo crescer para empurrar o botão */
+            flex-grow: 1;
+        }
+
+        /* Estilização do Botão */
+        .card button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .card button:hover {
+            background-color: #2980b9;
+        }
+
+        /* Responsividade: Quando a tela for menor (ex: celular) */
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column; /* Cards um embaixo do outro */
+                align-items: center;
+            }
+            
+            .card {
+                width: 90%; /* Ajusta a largura para telas estreitas */
+                max-width: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <main class="container">
+        <!-- Card 1 -->
+        <article class="card">
+            <h2>Título 1</h2>
+            <p>Este é um exemplo de texto para o card. Conteúdo simples para demonstração.</p>
+            <button>Saiba mais</button>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card">
+            <h2>Título 2</h2>
+            <p>Outro exemplo de conteúdo para mostrar como os cards funcionam. Este card tem um pouco mais de texto para testar o alinhamento do botão.</p>
+            <button>Saiba mais</button>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card">
+            <h2>Título 3</h2>
+            <p>Mais um card com conteúdo de exemplo para completar o layout.</p>
+            <button>Saiba mais</button>
+        </article>
+    </main>
+
+</body>
+</html>
