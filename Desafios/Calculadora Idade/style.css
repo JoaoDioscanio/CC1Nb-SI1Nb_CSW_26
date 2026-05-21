@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+body {
+    background-color: antiquewhite;
+}
+title{
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+}
+button {
+    width: 50px;
+}
