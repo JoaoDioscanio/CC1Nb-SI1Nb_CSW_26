@@ -14,3 +14,84 @@ function pegarvalor() {
     var idade = hoje - dataN;
     document.getElementById("idade").innerHTML = "Você tem "+idade+" anos";
 }
+
+function dma(){
+    var dia = document.getElementById("dia").value;
+    var mes = document.getElementById("mes").value;
+    var ano = document.getElementById("ano").value;
+    
+    var diaH = new Date().getDate();
+    var mesH = new Date().getMonth();
+    var anoH = new Date().getFullYear();
+
+    switch(mes)
+    {
+        case "jan":
+            mes = 1;
+            break;
+        
+        case "fev":
+            mes = 2;
+            break;
+            
+        case "mar":
+            mes = 3;
+            break;
+            
+        case "abr":
+            mes = 4;
+            break;
+        case "mai":
+            mes = 5;
+            break;
+        case "jun":
+            mes = 6;
+            break;
+        case "jul":
+            mes = 7;
+            break;
+        case "ago":
+            mes = 8;
+            break;
+        case "set":
+            mes = 9;
+            break;
+        case "out":
+            mes = 10;
+            break;
+        case "nov":
+            mes = 11;
+            break;
+        case "dez":
+            mes = 12;
+            break;
+    }
+
+    var idade;
+
+    if (mes == mesH)
+    {
+        if (dia > diaH)
+        {
+            idade = (anoH - ano) - 1;
+        }
+        else if (dia == diaH)
+        {
+            alert("Feliz Aniversário");
+            idade = anoH - ano;
+        }
+        else
+        {
+            idade = anoH - ano;
+        }
+    }
+    else if (mes > mesH)
+    {
+        idade = anoH - ano - 1;
+    }
+    else 
+    {
+        idade = anoH - ano;
+    }
+    document.getElementById("idadeT").innerHTML = "Você tem "+idade+" anos";
+}
