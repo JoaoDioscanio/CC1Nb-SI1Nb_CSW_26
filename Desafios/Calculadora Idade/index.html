@@ -13,12 +13,31 @@
         <title>oi</title>
     </header>
 
-    <div class="button">Data de Nascimento<label for="data_nascimento"><input type="number" id="data_nascimento"
+    <div class="button">Ano nascimento<label for="data_nascimento"><input type="number" id="data_nascimento"
                 name="data_nascimento"></label>
         <button id="confirm" onclick="pegarvalor()">Enviar</button>
     </div>
     <p id="idade"></p>
-
+    <div class="button">Data de Nascimento<br><label for="dia"><input type="number" id="dia" placeholder="Dia"></label>
+        <label for="mes"></label>
+        <select id="mes">
+            <option value="jan">Janeiro</option>
+            <option value="fev">Fevereiro</option>
+            <option value="mar">Março</option>
+            <option value="abr">Abril</option>
+            <option value="mai">Maio</option>
+            <option value="jun">Junho</option>
+            <option value="jul">Julho</option>
+            <option value="ago">Agosto</option>
+            <option value="set">Setembro</option>
+            <option value="out">Outubro</option>
+            <option value="nov">Novembro</option>
+            <option value="dez">Dezembro</option>
+        </select>
+        <label for="ano"><input type="number" id="ano" placeholder="Ano"></label><br><button id="submit"
+            onclick="dma()">Submit</button>
+    </div>
+    <p id="idadeT"></p>
 
     <script src="script.js"></script>
 </body>
