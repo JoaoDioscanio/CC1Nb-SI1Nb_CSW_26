@@ -27,43 +27,43 @@ function dma(){
     switch(mes)
     {
         case "jan":
-            mes = 1;
+            mes = 0;
             break;
         
         case "fev":
-            mes = 2;
+            mes = 1;
             break;
             
         case "mar":
-            mes = 3;
+            mes = 2;
             break;
             
         case "abr":
-            mes = 4;
+            mes = 3;
             break;
         case "mai":
-            mes = 5;
+            mes = 4;
             break;
         case "jun":
-            mes = 6;
+            mes = 5;
             break;
         case "jul":
-            mes = 7;
+            mes = 6;
             break;
         case "ago":
-            mes = 8;
+            mes = 7;
             break;
         case "set":
-            mes = 9;
+            mes = 8;
             break;
         case "out":
-            mes = 10;
+            mes = 9;
             break;
         case "nov":
-            mes = 11;
+            mes = 10;
             break;
         case "dez":
-            mes = 12;
+            mes = 11;
             break;
     }
 
